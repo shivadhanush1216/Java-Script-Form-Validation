@@ -1,4 +1,4 @@
-/* style.css */
+/* style.css
 
 h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -32,9 +32,96 @@ input:hover {
 
 .form {
   width: 30%;
+  margin: auto;
 }
 
 .form-group {
   position: relative;
   margin-bottom: 20px;
+} */
+
+/* General Styles */
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: blue;
+}
+
+form {
+  border: solid 2px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff1111;
+  padding: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+input:hover {
+  box-shadow: 0 0 20px rgba(77, 205, 18, 0.2);
+}
+
+/* Form Container */
+.form {
+  width: 30%;
+  margin: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .form {
+    width: 80%; /* Reduce the width for tablets */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Adjust the heading size */
+  }
+
+  form {
+    padding: 15px; /* Adjust padding for smaller screens */
+    box-shadow: 0 0 10px #514646;
+  }
+}
+
+@media (max-width: 576px) {
+  .form {
+    width: 90%; /* Further reduce the width for mobile phones */
+  }
+
+  h1 {
+    font-size: 1.25rem; /* Smaller heading size for mobile */
+  }
+
+  form {
+    padding: 10px; /* Adjust padding for mobile screens */
+    box-shadow: none; /* Remove box shadow for simplicity on mobile */
+    box-shadow: 0 0 10px #514646;
+  }
+
+  label {
+    font-size: 0.9rem; /* Adjust label size for better readability */
+  }
+
+  input {
+    padding: 6px; /* Reduce padding for mobile */
+  }
+
+  input:hover {
+    box-shadow: none; /* Remove hover effect on mobile for simplicity */
+  }
+
+  button {
+    width: 100%; /* Make the submit button full-width on mobile */
+  }
 }
